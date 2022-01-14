@@ -4,11 +4,13 @@
   box-sizing: border-box;
 }
 
-/*font-family: 'Poppins', sans-serif;*/
+/* -------BODY-------- */
 
 body {
   background-color: #c0ebf9;
 }
+
+/* -------FORM-------- */
 
 .container {
   display: flex;
@@ -30,6 +32,7 @@ body {
   font-size: 24px;
   margin-bottom: 20px;
   color: #467745;
+  text-align: center;
 }
 @media (max-width: 640px) {
   .title {
@@ -40,6 +43,17 @@ body {
     width: 560px;
   }
 }
+
+/* TEST */
+/* @media (max-width: 640px) {
+  .inp {
+    width: calc(100%-40px);
+  }
+} */
+
+
+
+/* -------INPUT-------- */
 
 .inp{
     display: block;
@@ -55,13 +69,6 @@ body {
     background-color: white;
     
 }
-@media (max-width: 640px) {
-  .inp {
-    width: calc(100%-40px);
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-}
 
 .inp::placeholder {
   color: #467745;
@@ -71,12 +78,13 @@ body {
   width: 100%;
   max-width: 600px;
   height: 120px;
+  padding-left: 15px;
+  padding-top: 10px;
+
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 400;
   background-color: white;
-  padding-left: 15px;
-  padding-top: 10px;
 }
 .text-area::placeholder {
   color: #467745;
@@ -87,7 +95,6 @@ body {
   margin-top: 25px;
   margin-bottom: 25px;
   margin-left: 80px;
-  gap: 10px;
   align-items: center;
 
   font-family: "Poppins", sans-serif;
@@ -99,9 +106,6 @@ body {
 input[type="checkbox"] {
   min-width: 20px;
   height: 20px;
-
-  border: none;
-  outline: none;
 }
 
 p {
